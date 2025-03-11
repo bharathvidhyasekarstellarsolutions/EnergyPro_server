@@ -1,0 +1,399 @@
+2025-03-11T02:04:30.927Z info [auth]: Created today's log file.
+2025-03-11T02:42:40.358Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T02:42:40.642Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T02:42:40.710Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T02:42:45.464Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741660965 98e67ed59e1d1-2ff693f7f0bsm8802318a91.46 - gsmtp
+2025-03-11T02:45:57.545Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T02:45:57.582Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T02:45:57.584Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: OtpTable.deleteOne is not a function
+2025-03-11T02:48:26.640Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T02:48:26.667Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T02:48:26.669Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: OtpTable.deleteOne is not a function
+2025-03-11T02:48:47.481Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T02:48:47.513Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T02:48:47.515Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: OtpTable.deleteOne is not a function
+2025-03-11T02:56:01.908Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T02:56:01.958Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T02:56:01.962Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: OtpTable.deleteOne is not a function
+2025-03-11T02:57:11.721Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T02:57:11.745Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T02:57:11.761Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: notNull Violation: User.password cannot be null
+2025-03-11T03:12:23.257Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T03:12:23.297Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:12:23.320Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T03:12:26.903Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741662746 d2e1a72fcca58-736984f6f82sm9115459b3a.115 - gsmtp
+2025-03-11T03:13:03.478Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:13:03.499Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T03:13:03.514Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: notNull Violation: User.password cannot be null
+2025-03-11T03:14:40.447Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T03:14:40.530Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:14:40.575Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T03:14:44.728Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741662884 d9443c01a7336-224109ddd0bsm86889585ad.35 - gsmtp
+2025-03-11T03:15:25.742Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:15:25.757Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T03:15:25.767Z error [auth]: Error in OTP verification and user creation for email: bharathvidhyasekar@stellarsolutions.org: notNull Violation: User.password cannot be null
+2025-03-11T03:18:16.081Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T03:18:16.154Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:18:16.192Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T03:18:20.080Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741663099 d9443c01a7336-22410a7f7cbsm86566085ad.140 - gsmtp
+2025-03-11T03:20:02.459Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:20:02.497Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T03:20:02.533Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:24:02.847Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T03:24:02.872Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T03:29:00.108Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:06:03.497Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:06:03.530Z warn [auth]: User with email or username bharathvidhyasekar@stellarsolutions.org/bharath already exists.
+2025-03-11T04:09:18.701Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:09:19.076Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:09:19.111Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:09:23.525Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741666162 d2e1a72fcca58-736a95af6b5sm7833191b3a.81 - gsmtp
+2025-03-11T04:10:14.737Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:10:14.763Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:10:14.792Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:10:24.357Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:10:24.367Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T04:10:31.585Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:26:30.217Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:26:30.300Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:26:30.330Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:26:33.260Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741667192 d9443c01a7336-224109e9850sm87584085ad.86 - gsmtp
+2025-03-11T04:27:42.067Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:27:42.083Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:27:42.094Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:28:12.527Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:28:12.542Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:41:42.189Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:41:42.237Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:41:42.248Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:41:45.295Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741668104 d2e1a72fcca58-736cc153016sm4338520b3a.173 - gsmtp
+2025-03-11T04:42:22.073Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:42:22.090Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:42:22.103Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:43:15.656Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:43:15.676Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:43:39.331Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:43:39.391Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:44:17.551Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:44:17.584Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:44:17.592Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:44:20.404Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741668259 d9443c01a7336-224109e9fbfsm87986045ad.92 - gsmtp
+2025-03-11T04:44:56.767Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:44:56.782Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:44:56.796Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:45:38.037Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:45:38.057Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:45:38.064Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:45:40.743Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741668339 d2e1a72fcca58-736c0d62199sm5533347b3a.151 - gsmtp
+2025-03-11T04:46:06.702Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:46:06.713Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:46:06.723Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:46:38.789Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:46:38.796Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:49:27.485Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:49:27.518Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:49:27.524Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:49:30.210Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741668569 d2e1a72fcca58-736c30b3a0csm5319512b3a.88 - gsmtp
+2025-03-11T04:49:54.795Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:49:54.806Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:49:54.822Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:51:33.597Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T04:51:33.668Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:51:33.674Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T04:51:37.082Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741668696 d9443c01a7336-22410aa4f54sm87758155ad.218 - gsmtp
+2025-03-11T04:52:01.245Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:52:01.256Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T04:52:01.268Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T04:55:47.792Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T04:55:51.499Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:01:06.882Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:01:43.158Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:03:11.870Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:03:45.892Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:04:01.652Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:04:59.405Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:11:28.771Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:11:50.212Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:12:57.095Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Support for `{where: 'raw query'}` has been removed.
+2025-03-11T05:14:35.051Z error [auth]: Error during login for email: bharathvidhyasekar@stellarsolutions.org: Illegal arguments: string, object
+2025-03-11T05:18:41.246Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T05:18:41.337Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:18:41.384Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T05:18:45.376Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741670324 d2e1a72fcca58-736bb029402sm6184696b3a.27 - gsmtp
+2025-03-11T05:19:09.708Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:19:09.725Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T05:19:09.752Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:38:21.268Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T05:38:21.633Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:38:21.641Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T05:38:25.056Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741671503 d2e1a72fcca58-73698244247sm9396371b3a.43 - gsmtp
+2025-03-11T05:38:50.379Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:38:50.385Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T05:38:50.397Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:56:09.021Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:56:09.039Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T05:56:34.206Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T05:58:14.775Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:05:14.949Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:17:29.207Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:18:46.320Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:20:02.871Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:21:47.916Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:23:30.146Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:24:01.159Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:25:33.728Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:29:52.087Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:31:09.707Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:35:16.677Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:35:42.365Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:40:22.548Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:42:32.954Z warn [auth]: Invalid password attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:42:48.839Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:43:03.860Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:44:27.952Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:45:23.588Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:46:55.742Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:51:10.949Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:52:19.704Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T06:58:00.668Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T07:02:38.636Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T07:06:16.257Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T07:07:55.742Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T07:08:48.367Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath_inst
+2025-03-11T07:08:48.404Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharath_inst already exists.
+2025-03-11T07:08:58.199Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath_inst
+2025-03-11T07:08:58.207Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharath_inst already exists.
+2025-03-11T07:09:09.417Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T07:09:09.445Z warn [auth]: User with email or username bharathvidhyasekar@stellarsolutions.org/bharath_inst already exists.
+2025-03-11T07:10:27.041Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath
+2025-03-11T07:10:27.052Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharath already exists.
+2025-03-11T07:11:10.648Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath
+2025-03-11T07:11:10.672Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharath already exists.
+2025-03-11T07:11:17.282Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharathv
+2025-03-11T07:11:17.289Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharathv already exists.
+2025-03-11T07:11:17.495Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharathv
+2025-03-11T07:11:17.506Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharathv already exists.
+2025-03-11T07:12:24.745Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharathv
+2025-03-11T07:12:24.767Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharathv already exists.
+2025-03-11T07:13:16.039Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharathv
+2025-03-11T07:13:16.062Z warn [auth]: User with email or username bharathsurya539@gmail.com/bharathv already exists.
+2025-03-11T07:13:22.779Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: raja
+2025-03-11T07:13:22.786Z warn [auth]: User with email or username bharathsurya539@gmail.com/raja already exists.
+2025-03-11T07:13:22.996Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: raja
+2025-03-11T07:13:23.006Z warn [auth]: User with email or username bharathsurya539@gmail.com/raja already exists.
+2025-03-11T07:14:25.374Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: raja
+2025-03-11T07:14:25.394Z warn [auth]: User with email or username bharathsurya539@gmail.com/raja already exists.
+2025-03-11T07:15:45.110Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: raja
+2025-03-11T07:15:45.172Z warn [auth]: ❌ Registration failed: User with email "bharathsurya539@gmail.com" or username "raja" already exists.
+2025-03-11T07:17:20.530Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath_1
+2025-03-11T07:17:20.564Z warn [auth]: ❌ Registration failed: User with email "bharathsurya539@gmail.com" or username "bharath_1" already exists.
+2025-03-11T07:17:42.460Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@gmail.com for user: bharath_inst
+2025-03-11T07:17:42.474Z warn [auth]: ❌ Registration failed: User with email "bharathvidhyasekar@gmail.com" or username "bharath_inst" already exists.
+2025-03-11T07:18:08.137Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@gmail.com for user: bharath_inst
+2025-03-11T07:18:08.163Z warn [auth]: ❌ Registration failed: User with email "bharathvidhyasekar@gmail.com" or username "bharath_inst" already exists.
+2025-03-11T07:18:23.110Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T07:18:41.450Z warn [auth]: Login failed: User not found for email: bharathsurya539@gmail.com
+2025-03-11T07:18:47.489Z warn [auth]: Login failed: User not found for email: bharathsurya539@gmail.com
+2025-03-11T07:26:07.197Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T07:26:26.055Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath_inst
+2025-03-11T07:26:26.059Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:30:22.004Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:30:22.016Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:30:46.390Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:30:46.400Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:31:27.090Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:31:27.092Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:32:58.998Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:32:59.003Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:38:39.255Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:38:39.265Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:39:17.762Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:39:17.768Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:41:41.602Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:41:41.613Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:42:03.606Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:42:03.616Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:44:26.510Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:44:26.514Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:44:59.909Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:44:59.920Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:45:32.311Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:45:32.313Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:53:34.487Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:53:34.492Z error [auth]: Error in OTP generation or sending: pool is not defined
+2025-03-11T07:59:38.970Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T07:59:38.982Z error [auth]: Error in OTP generation or sending: Unknown column '$1' in 'where clause'
+2025-03-11T08:01:13.775Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T08:01:13.780Z error [auth]: Error in OTP generation or sending: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR LOWER(username) = ?' at line 1
+2025-03-11T08:03:35.113Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T08:03:35.119Z error [auth]: Error in OTP generation or sending: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR LOWER(username) = ?' at line 1
+2025-03-11T08:04:00.652Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T08:04:00.657Z error [auth]: Error in OTP generation or sending: Table 'energypro.user' doesn't exist
+2025-03-11T08:05:21.439Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T08:05:21.444Z error [auth]: Error in OTP generation or sending: Cannot read properties of undefined (reading 'length')
+2025-03-11T08:05:52.496Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T08:05:52.505Z error [auth]: Error in OTP generation or sending: Cannot read properties of undefined (reading 'length')
+2025-03-11T08:49:57.494Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T08:49:57.634Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T08:49:57.716Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T08:50:01.512Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741683000 d9443c01a7336-224109dfad4sm92591145ad.23 - gsmtp
+2025-03-11T08:50:28.868Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T08:50:28.906Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T08:50:28.956Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T08:50:37.287Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T08:50:37.302Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T08:50:46.163Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T08:51:06.088Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:51:06.127Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:52:30.637Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:52:30.665Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:54:03.827Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:54:03.853Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:54:27.017Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:54:27.068Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:54:42.615Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:54:42.639Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:55:23.032Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:55:23.046Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:55:44.950Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:55:44.972Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:56:50.717Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:56:50.749Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:57:05.858Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:57:05.883Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:57:16.926Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:57:16.970Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:57:17.149Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:57:17.161Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T08:57:51.625Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T08:57:51.640Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath_inst" already exists.
+2025-03-11T09:00:02.851Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T09:00:02.864Z error [auth]: Error in OTP generation or sending: role is not defined
+2025-03-11T09:00:21.650Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T09:00:21.655Z error [auth]: Error in OTP generation or sending: role is not defined
+2025-03-11T09:07:41.165Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath_inst
+2025-03-11T09:07:41.231Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:07:41.267Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T09:07:45.287Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741684064 d2e1a72fcca58-736a1f813d1sm9115683b3a.129 - gsmtp
+2025-03-11T09:08:10.861Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:08:10.896Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T09:08:10.937Z info [auth]: User created successfully: bharath_inst with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:08:20.051Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:08:20.063Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T09:08:32.073Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:10:34.051Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:11:52.874Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:12:18.236Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:12:58.593Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:13:32.787Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:14:11.474Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:18:13.171Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:18:57.687Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:22:19.846Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:24:33.918Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:25:04.371Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:27:13.394Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:34:59.938Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:35:12.531Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath
+2025-03-11T09:35:12.580Z info [auth]: Created new OTP record for email: bharathsurya539@gmail.com
+2025-03-11T09:35:12.620Z debug [auth]: OTP for bharathsurya539@gmail.com saved in database.
+2025-03-11T09:35:16.981Z info [auth]: OTP successfully sent to bharathsurya539@gmail.com: 250 2.0.0 OK  1741685715 d2e1a72fcca58-736be7845c8sm6524919b3a.109 - gsmtp
+2025-03-11T09:35:33.370Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:35:33.391Z info [auth]: OTP validated successfully for email: bharathsurya539@gmail.com. Deleting OTP record.
+2025-03-11T09:35:33.444Z info [auth]: User created successfully: bharath with email: bharathsurya539@gmail.com
+2025-03-11T09:35:40.987Z info [auth]: Password hashed successfully for email: bharathsurya539@gmail.com
+2025-03-11T09:35:40.998Z info [auth]: Password successfully created for email: bharathsurya539@gmail.com. User can now log in.
+2025-03-11T09:35:47.513Z info [auth]: Login successful for email: bharathsurya539@gmail.com
+2025-03-11T09:45:55.531Z warn [auth]: Login failed: User not found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:45:55.730Z warn [auth]: Login failed: User not found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:46:15.223Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T09:46:15.626Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:46:15.672Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T09:46:20.203Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741686379 d2e1a72fcca58-736a03c3533sm9355117b3a.161 - gsmtp
+2025-03-11T09:46:44.000Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:46:44.033Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T09:46:44.062Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:46:54.051Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:46:54.063Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T09:48:09.655Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:48:22.691Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath_inst
+2025-03-11T09:48:22.727Z info [auth]: Created new OTP record for email: bharathsurya539@gmail.com
+2025-03-11T09:48:22.745Z debug [auth]: OTP for bharathsurya539@gmail.com saved in database.
+2025-03-11T09:48:26.250Z info [auth]: OTP successfully sent to bharathsurya539@gmail.com: 250 2.0.0 OK  1741686505 d9443c01a7336-224109e986asm93469245ad.82 - gsmtp
+2025-03-11T09:48:37.750Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:48:37.773Z info [auth]: OTP validated successfully for email: bharathsurya539@gmail.com. Deleting OTP record.
+2025-03-11T09:48:37.810Z info [auth]: User created successfully: bharath_inst with email: bharathsurya539@gmail.com
+2025-03-11T09:48:44.944Z info [auth]: Password hashed successfully for email: bharathsurya539@gmail.com
+2025-03-11T09:48:44.954Z info [auth]: Password successfully created for email: bharathsurya539@gmail.com. User can now log in.
+2025-03-11T09:48:51.636Z info [auth]: Login successful for email: bharathsurya539@gmail.com
+2025-03-11T09:49:15.640Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath111
+2025-03-11T09:49:15.658Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath111" already exists.
+2025-03-11T09:49:23.291Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath111
+2025-03-11T09:49:23.296Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath111" already exists.
+2025-03-11T09:49:31.558Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath111
+2025-03-11T09:49:31.564Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath111" already exists.
+2025-03-11T09:49:43.474Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath111
+2025-03-11T09:49:43.494Z warn [auth]: Registration failed: User with email "bharathsurya539@gmail.com" or username "bharath111" already exists.
+2025-03-11T09:51:06.328Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath111
+2025-03-11T09:51:06.395Z error [auth]: Error in OTP generation or sending: Table 'energypro.otptables' doesn't exist
+2025-03-11T09:51:17.517Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath111
+2025-03-11T09:51:17.557Z info [auth]: Created new OTP record for email: bharathsurya539@gmail.com
+2025-03-11T09:51:17.605Z debug [auth]: OTP for bharathsurya539@gmail.com saved in database.
+2025-03-11T09:51:18.867Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath111
+2025-03-11T09:51:18.883Z info [auth]: Updated OTP for existing record: bharathsurya539@gmail.com
+2025-03-11T09:51:18.909Z debug [auth]: OTP for bharathsurya539@gmail.com saved in database.
+2025-03-11T09:51:21.005Z info [auth]: OTP successfully sent to bharathsurya539@gmail.com: 250 2.0.0 OK  1741686680 41be03b00d2f7-af54cfed6b9sm580006a12.52 - gsmtp
+2025-03-11T09:51:22.269Z info [auth]: OTP successfully sent to bharathsurya539@gmail.com: 250 2.0.0 OK  1741686681 d9443c01a7336-22410aaa9d8sm93196655ad.242 - gsmtp
+2025-03-11T09:51:37.613Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:51:37.648Z warn [auth]: Invalid OTP entered for email: bharathsurya539@gmail.com
+2025-03-11T09:51:54.121Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T09:51:54.150Z info [auth]: Updated OTP for existing record: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:51:54.176Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T09:51:57.497Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741686716 d2e1a72fcca58-736b7bb0bf2sm7148002b3a.42 - gsmtp
+2025-03-11T09:53:17.377Z warn [auth]: Login failed: User not found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:53:24.855Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T09:53:24.900Z info [auth]: Updated OTP for existing record: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:53:24.951Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T09:53:28.436Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741686807 d9443c01a7336-22410a81c4dsm93572705ad.149 - gsmtp
+2025-03-11T09:53:42.904Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:53:42.915Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:53:57.759Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:53:57.772Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:54:40.915Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:54:40.936Z warn [auth]: No OTP record found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:55:42.936Z warn [auth]: Login failed: User not found for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:55:49.697Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T09:55:49.705Z info [auth]: Created new OTP record for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:55:49.719Z debug [auth]: OTP for bharathvidhyasekar@stellarsolutions.org saved in database.
+2025-03-11T09:55:52.820Z info [auth]: OTP successfully sent to bharathvidhyasekar@stellarsolutions.org: 250 2.0.0 OK  1741686951 98e67ed59e1d1-2ff4e7ffe18sm11487045a91.31 - gsmtp
+2025-03-11T09:56:16.312Z info [auth]: OTP verification attempt for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:56:16.328Z info [auth]: OTP validated successfully for email: bharathvidhyasekar@stellarsolutions.org. Deleting OTP record.
+2025-03-11T09:56:16.343Z info [auth]: User created successfully: bharath with email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:56:25.356Z info [auth]: Password hashed successfully for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:56:25.366Z info [auth]: Password successfully created for email: bharathvidhyasekar@stellarsolutions.org. User can now log in.
+2025-03-11T09:56:35.373Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T09:56:51.885Z info [auth]: Attempting to send OTP to email: bharathvidhyasekar@stellarsolutions.org for user: bharath
+2025-03-11T09:56:51.893Z warn [auth]: Registration failed: User with email "bharathvidhyasekar@stellarsolutions.org" or username "bharath" already exists.
+2025-03-11T09:56:59.852Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath
+2025-03-11T09:56:59.855Z warn [auth]: Registration failed: User with email "bharathsurya539@gmail.com" or username "bharath" already exists.
+2025-03-11T09:57:07.814Z info [auth]: Attempting to send OTP to email: bharathsurya539@gmail.com for user: bharath_inst
+2025-03-11T09:57:07.821Z info [auth]: Created new OTP record for email: bharathsurya539@gmail.com
+2025-03-11T09:57:07.827Z debug [auth]: OTP for bharathsurya539@gmail.com saved in database.
+2025-03-11T09:57:11.389Z info [auth]: OTP successfully sent to bharathsurya539@gmail.com: 250 2.0.0 OK  1741687030 98e67ed59e1d1-2ff4e823b98sm11426243a91.46 - gsmtp
+2025-03-11T09:57:25.251Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:57:25.262Z warn [auth]: Invalid OTP entered for email: bharathsurya539@gmail.com
+2025-03-11T09:57:41.935Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:57:41.940Z warn [auth]: Invalid OTP entered for email: bharathsurya539@gmail.com
+2025-03-11T09:57:53.852Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:57:53.859Z warn [auth]: Invalid OTP entered for email: bharathsurya539@gmail.com
+2025-03-11T09:58:31.545Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:58:31.560Z warn [auth]: Invalid OTP entered for email: bharathsurya539@gmail.com
+2025-03-11T09:59:53.382Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T09:59:53.391Z warn [auth]: Invalid OTP entered for email: bharathsurya539@gmail.com
+2025-03-11T10:00:20.490Z info [auth]: OTP verification attempt for email: bharathsurya539@gmail.com
+2025-03-11T10:00:20.495Z info [auth]: OTP validated successfully for email: bharathsurya539@gmail.com. Deleting OTP record.
+2025-03-11T10:00:20.509Z info [auth]: User created successfully: bharath_inst with email: bharathsurya539@gmail.com
+2025-03-11T10:00:27.929Z info [auth]: Password hashed successfully for email: bharathsurya539@gmail.com
+2025-03-11T10:00:27.937Z info [auth]: Password successfully created for email: bharathsurya539@gmail.com. User can now log in.
+2025-03-11T10:00:39.002Z info [auth]: Login successful for email: bharathsurya539@gmail.com
+2025-03-11T10:00:52.366Z info [auth]: Login successful for email: bharathsurya539@gmail.com

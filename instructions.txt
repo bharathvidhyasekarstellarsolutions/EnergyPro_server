@@ -1,0 +1,4 @@
+1) first step 
+npm install
+2) run code
+npm start

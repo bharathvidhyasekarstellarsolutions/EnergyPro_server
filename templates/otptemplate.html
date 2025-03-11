@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #e0e4e8;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            color: #4a4a4a;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .otp-code {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f0f4f8;
+            border-radius: 8px;
+            letter-spacing: 5px;
+            color: #007bff;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .company-name {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">OTP Verification CompanyName</h1>
+        
+        <p>Hi {{username}},</p>
+        
+        <p>Thank you for signing up with <span class="company-name">CompanyName</span>! To ensure the security of your account and complete your registration, we need to verify your identity.</p>
+        
+        <p>Please use the One-Time Password (OTP) below to verify your account:</p>
+        
+        <div class="otp-code">{{otp}}</div>
+        
+        <p><strong>Important:</strong> This OTP will expire in <strong>5 minutes</strong>, so make sure to use it promptly. For your safety, never share this code with anyone.</p>
+        
+        <p>If you did not sign up or request this verification, you can safely ignore this email. Your account remains secure.</p>
+        
+        <div class="footer">
+            <p>If you need assistance or have any questions, feel free to <a href="mailto:support@CompanyName.com">contact our support team</a>.</p>
+            <p>Best regards,<br><span class="company-name">CompanyName</span> Support Team</p>
+            <p>© 2023 <span class="company-name">CompanyName</span>. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
