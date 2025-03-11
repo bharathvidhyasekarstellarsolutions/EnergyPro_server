@@ -1,12 +1,25 @@
 require("dotenv").config();
-const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const helmet = require("helmet");
 const { logger } = require("./utils/logger");
 const indexRoutes = require("./routes/indexRoute");
-
+const express = require("express");
+const authRoutes = require("./routes/authRoutes");
+const userRoutes = require("./routes/userRoutes");
+const courseRoute=require("./routes/courseRouters");
 const app = express();
+
+app.use(express.json());
+
+app.use("/auth", authRoutes);
+app.use("/users", userRoutes);
+app.use("/courses",courseRoute);
+
+
+
+module.exports = app;
+
 
 app.use(helmet());
 app.use(cors());

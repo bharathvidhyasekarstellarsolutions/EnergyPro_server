@@ -29,6 +29,7 @@ sequelize
 // Import Models
 const User = require("./user")(sequelize);
 const OtpTable = require("./otp")(sequelize);
+const Course = require("./course")(sequelize);
 
   
 
@@ -36,4 +37,5 @@ module.exports = {
   sequelize,
   User,
   OtpTable,
+  Course
 };

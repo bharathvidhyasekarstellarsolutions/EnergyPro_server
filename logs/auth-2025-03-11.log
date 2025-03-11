@@ -397,3 +397,17 @@
 2025-03-11T10:00:27.937Z info [auth]: Password successfully created for email: bharathsurya539@gmail.com. User can now log in.
 2025-03-11T10:00:39.002Z info [auth]: Login successful for email: bharathsurya539@gmail.com
 2025-03-11T10:00:52.366Z info [auth]: Login successful for email: bharathsurya539@gmail.com
+2025-03-11T14:00:42.377Z info [auth]: Login successful for email: bharathvidhyasekar@stellarsolutions.org
+2025-03-11T14:01:37.842Z info [auth]: Attempting to send OTP to email: ggowtham610@gmail.com for user: gowtham
+2025-03-11T14:01:37.929Z info [auth]: Created new OTP record for email: ggowtham610@gmail.com
+2025-03-11T14:01:38.021Z debug [auth]: OTP for ggowtham610@gmail.com saved in database.
+2025-03-11T14:01:42.027Z info [auth]: OTP successfully sent to ggowtham610@gmail.com: 250 2.0.0 OK  1741701701 d9443c01a7336-22410a91971sm97868325ad.165 - gsmtp
+2025-03-11T14:02:09.762Z info [auth]: OTP verification attempt for email: ggowtham610@gmail.com
+2025-03-11T14:02:09.783Z info [auth]: OTP validated successfully for email: ggowtham610@gmail.com. Deleting OTP record.
+2025-03-11T14:02:09.823Z info [auth]: User created successfully: gowtham with email: ggowtham610@gmail.com
+2025-03-11T14:02:23.182Z info [auth]: Password hashed successfully for email: ggowtham610@gmail.com
+2025-03-11T14:02:23.198Z info [auth]: Password successfully created for email: ggowtham610@gmail.com. User can now log in.
+2025-03-11T14:02:41.201Z info [auth]: Login successful for email: ggowtham610@gmail.com
+2025-03-11T14:44:09.222Z info [auth]: Login successful for email: bharathsurya539@gmail.com
+2025-03-11T15:10:48.620Z info [auth]: Login successful for email: bharathsurya539@gmail.com
+2025-03-11T15:15:21.660Z info [auth]: Login successful for email: bharathsurya539@gmail.com
