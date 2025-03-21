@@ -2,6 +2,9 @@ const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 
+
+
+
 // Function to ensure directories exist
 const ensureDirExists = (dir) => {
   if (!fs.existsSync(dir)) {
@@ -18,8 +21,14 @@ const storage = multer.diskStorage({
       uploadPath = "uploads/videos/";
     } else if (file.mimetype.startsWith("image/")) {
       uploadPath = "uploads/images/";
+    } else if (
+      file.mimetype === "application/pdf" ||
+      file.mimetype === "application/msword" ||
+      file.mimetype.startsWith("application/vnd")
+    ) {
+      uploadPath = "uploads/files/";
     } else {
-      return cb(new Error("Only images and videos are allowed!"), false);
+      uploadPath = "uploads/others/"; // Optional: Handle unknown types separately
     }
 
     ensureDirExists(uploadPath); // Ensure the directory exists before saving
@@ -30,6 +39,10 @@ const storage = multer.diskStorage({
     cb(null, uniqueName);
   },
 });
+
+
+
+
 
 const upload = multer({ storage });
 

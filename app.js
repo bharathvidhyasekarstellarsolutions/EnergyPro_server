@@ -9,6 +9,7 @@ const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const courseRoute=require("./routes/courseRouters");
 const app = express();
+const path = require("path")
 
 app.use(express.json());
 
@@ -31,10 +32,14 @@ app.use(
 );
 
 app.use("/v1/api", indexRoutes);
-
-app.get("/", (req, res) => {
-  res.send("Welcome to the Stellar E-commerce API");
-});
+app.use("/uploads", express.static(path.join(__dirname, "uploads"), {
+  setHeaders: (res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins (or specify frontend URL)
+    res.setHeader("Access-Control-Allow-Headers", "Range"); // Allow range headers for video streaming
+    res.setHeader("Access-Control-Expose-Headers", "Content-Length, Content-Range"); // Expose necessary headers
+    res.setHeader("Accept-Ranges", "bytes"); // Enable range requests
+  }
+}));
 
 app.use((err, req, res, next) => {
   logger.error(err.stack);
