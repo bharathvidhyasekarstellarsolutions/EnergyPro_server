@@ -5,7 +5,7 @@ const roleMiddleware = (allowedRoles) => {
     const token = req.headers.authorization?.split(" ")[1];
 
     if (!token) {
-      return res.status(401).json({ message: "No token provided" });
+      return res.status(401).json({ message: "" });
     }
 
     try {
@@ -13,8 +13,8 @@ const roleMiddleware = (allowedRoles) => {
       // console.log("allowedRoles ::", allowedRoles);
       // console.log("Decoded Token From RoleMiddleware ::", decodedToken);
 
-      const { id, username, email, role } = decodedToken;
-      req.user = decodedToken;
+      const { id, username, email, role } = {...decodedToken};
+      req.user = {...decodedToken};
 
       // Get userId either from the body or from params
       const userIdFromBody = req.body?.userId;

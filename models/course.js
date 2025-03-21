@@ -1,10 +1,8 @@
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
-  const User = require("../models/user")(sequelize); // Import User correctly
-  
   const Course = sequelize.define("Course", {
-    id: {
+    courseId: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
@@ -24,27 +22,44 @@ module.exports = (sequelize) => {
     authorEmail: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        isEmail: true, // Ensures valid email format
+      },
     },
     price: {
-      type: DataTypes.INTEGER, // Store course price
+      type: DataTypes.DECIMAL(10, 2), // Supports decimal pricing
       allowNull: false,
     },
     category: {
-      type: DataTypes.STRING, // Store category
+      type: DataTypes.STRING,
       allowNull: false,
     },
     videoFile: {
-      type: DataTypes.STRING, // Store video file path
+      type: DataTypes.STRING,
       allowNull: false,
     },
     imageFile: {
-      type: DataTypes.STRING, // Store image file path
+      type: DataTypes.STRING,
       allowNull: true,
+    },
+    resourceFile:{
+      type:DataTypes.STRING,
+      allowNull:true,
+    },
+    instructorId: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      references: {
+        model: "Users", // Ensure this matches the actual table name
+        key: "id",
+      },
     },
   });
 
-  // Associate Course with User (Instructor)
-  Course.belongsTo(User, { foreignKey: "instructorId", as: "instructor" });
-
+  // ✅ Correctly define a static method to find a course by authorEmail
+  Course.findByEmail = async function (email) {
+    return await this.findOne({ where: { authorEmail: email } });
+  };
+ 
   return Course;
 };

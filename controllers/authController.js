@@ -9,6 +9,7 @@ const fs = require("fs");
 const path = require("path");
 const { where } = require("sequelize");
 const { rootCertificates } = require("tls");
+const { log } = require("console");
 
 // generate otp
 function generateOTP() {
@@ -17,85 +18,46 @@ function generateOTP() {
 
 // send otp
 exports.sendOtp = async (req, res) => {
-  let otpRecord = null;
   try {
-    let { username, email } = req.body;
+    let { email, username } = req.body;
     email = email.trim().toLowerCase();
     username = username.trim();
 
-    authLogger.info(
-      `Attempting to send OTP to email: ${email} for user: ${username}`
-    );
+    authLogger.info(`Attempting to send OTP to ${email}`);
 
-    // ✅ Check if user already exists in SQL database
-    // const userCheckQuery = `SELECT * FROM users WHERE LOWER(email) = ? OR LOWER(username) = ?`;
-    const userCheckQuery = `
-    SELECT * FROM users 
-    WHERE LOWER(email) = :email OR LOWER(username) = :username
-  `;   
-  const existingUser = await sequelize.query(userCheckQuery, {
-    replacements: { 
-      email: email.toLowerCase(), 
-      username: username.toLowerCase(),
-    },
-    type: sequelize.QueryTypes.SELECT, 
-  });
-  
-  // Check if any of the existing users have the role "student"
-  const isStudent = existingUser.some(user => user.role?.toLowerCase() === "student");
-  
-  if (existingUser.length > 0) { 
-    authLogger.warn(
-      `Registration failed: User with email "${email}" or username "${username}" already exists.`
-    );
-  
-    return res.status(409).json({
-      status: "error",
-      message: isStudent 
-        ? "You already registered as a student." 
-        : "You already registered as a instrucror.",
-      loginUrl: "/login",
-      signupUrl: "/signup",
+    // ✅ Check if user already exists in the database
+    const existingUser = await User.findOne({
+      where: { email },
     });
-  }
 
-  
-
-    const otp = generateOTP();
-
-    const templatePath = path.join(
-      __dirname,
-      "..",
-      "templates",
-      "otptemplate.html"
-    );
-
-    let htmlContent = fs.readFileSync(templatePath, "utf8");
-
-    htmlContent = htmlContent
-      .replace("{{username}}", username)
-      .replace("{{otp}}", otp);
-
-    otpRecord = await OtpTable.findOne({ email });
-
-    if (otpRecord) {
-      otpRecord.otp = otp.toString();
-      otpRecord.updatedAt = new Date().toString();
-      authLogger.info(`Updated OTP for existing record: ${email}`);
-    } else {
-      otpRecord = new OtpTable({
-        username,
-        email,
-        otp: otp.toString(),
-        createdAt: new Date().toString(),
-        updatedAt: new Date().toString(),
+    if (existingUser) {
+      authLogger.warn(`User with email ${email} already exists.`);
+      return res.status(409).json({
+        status: "error",
+        message: "User already registered. Please login.",
       });
-      authLogger.info(`Created new OTP record for email: ${email}`);
     }
 
-    await otpRecord.save();
-    authLogger.debug(`OTP for ${email} saved in database.`);
+    // ✅ Generate a 6-digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
+    // ✅ Check if OTP already exists for the user
+    let otpRecord = await OtpTable.findOne({ where: { email } });
+
+    if (otpRecord) {
+      await otpRecord.update({ otp, updatedAt: new Date() });
+      authLogger.info(`Updated OTP for ${email}`);
+    } else {
+      otpRecord = await OtpTable.create({ username, email, otp });
+      authLogger.info(`Created new OTP record for ${email}`);
+    }
+
+    // ✅ Prepare email template
+    const templatePath = path.join(__dirname, "..", "templates", "otptemplate.html");
+    let htmlContent = fs.readFileSync(templatePath, "utf8");
+    htmlContent = htmlContent.replace("{{username}}", username).replace("{{otp}}", otp);
+
+    // ✅ Send OTP via email
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: email,
@@ -106,138 +68,108 @@ exports.sendOtp = async (req, res) => {
     transporter.sendMail(mailOptions, async (error, info) => {
       if (error) {
         authLogger.error(`Failed to send OTP to ${email}: ${error.message}`);
-        console.log("Error:", error);
-
-        await OtpTable.destroy({ where: { id: otpRecord.id } });
-        return res
-          .status(500)
-          .json({ message: "Failed to send OTP email", error });
+        await otpRecord.destroy();
+        return res.status(500).json({ status: "error", message: "Failed to send OTP." });
       }
 
-      authLogger.info(`OTP successfully sent to ${email}: ${info.response}`);
+      authLogger.info(`OTP successfully sent to ${email}`);
 
-      res.status(200).json({
+      return res.status(200).json({
         status: "success",
-        message: `OTP sent successfully to ${email}. Please check your inbox.`,
+        message: `OTP sent successfully to ${email}.`,
         user: {
-          id: otpRecord._id,
+          id: otpRecord.id,
           username: otpRecord.username,
           email: otpRecord.email,
         },
       });
     });
+
   } catch (error) {
-    if (otpRecord) {
-      await OtpTable.deleteOne({ _id: otpRecord._id });
-      authLogger.warn(
-        `OTP record for ${otpRecord.email} deleted due to error.`
-      );
-    }
-
-    if (error.code === 11000) {
-      const duplicateField = Object.keys(error.keyValue)[0];
-      const duplicateValue = error.keyValue[duplicateField];
-      authLogger.warn(
-        `Duplicate field error: ${duplicateField} '${duplicateValue}'`
-      );
-      return res.status(400).json({
-        status: "error",
-        message: `Duplicate value: The ${duplicateField} '${duplicateValue}' is already in use.`,
-      });
-    }
-
-    authLogger.error(`Error in OTP generation or sending: ${error.message}`);
-    res.status(500).json({
-      status: "error",
-      message: "Server error. Please try again later.",
-    });
+    authLogger.error(`Error in sending OTP: ${error.message}`);
+    return res.status(500).json({ status: "error", message: "Server error. Try again later." });
   }
 };
+
 
 // verify otp
 exports.verifyOtp = async (req, res) => {
   try {
-    const { email, otp ,role} = req.body;
+    const { email, otp, role } = req.body;
     authLogger.info(`OTP verification attempt for email: ${email}`);
 
+    // ✅ Find OTP record
     const otpRecord = await OtpTable.findOne({ where: { email } });
+
     if (!otpRecord) {
-      authLogger.warn(`No OTP record found for email: ${email}`);
-      return res.status(400).json({
-        status: "error",
-        message: "No OTP record found for this email.",
-      });
+      authLogger.warn(`No OTP record found for ${email}`);
+      return res.status(400).json({ status: "error", message: "No OTP found. Please request a new one." });
     }
 
-    // Check that otpRecord.createdAt is a valid date
-    if (!moment(otpRecord.createdAt).isValid()) {
-      authLogger.error(
-        `Invalid createdAt date for OTP record of email: ${email}`
-      );
-      return res.status(400).json({
-        status: "error",
-        message: "Invalid OTP record date.",
-      });
-    }
-
+    // ✅ Check if OTP is expired
     const expirationTime = moment(otpRecord.createdAt).add(15, "minutes");
     if (moment().isAfter(expirationTime)) {
-      authLogger.warn(
-        `OTP for email: ${email} has expired. Deleting OTP record.`
-      );
-      await OtpTable.destroy({ where: { id: otpRecord.id } });     
-       return res.status(400).json({
-        status: "error",
-        message: "OTP has expired. Please request a new OTP.",
-      });
+      authLogger.warn(`OTP expired for ${email}`);
+      await otpRecord.destroy();
+      return res.status(400).json({ status: "error", message: "OTP expired. Request a new one." });
     }
 
+    // ✅ Compare OTP
     if (otp !== otpRecord.otp) {
-      authLogger.warn(`Invalid OTP entered for email: ${email}`);
-      return res.status(400).json({
-        status: "error",
-        message: "Invalid OTP. Please try again.",
-      });
+      authLogger.warn(`Invalid OTP entered for ${email}`);
+      return res.status(400).json({ status: "error", message: "Invalid OTP. Try again." });
+    }
+    
+
+    // ✅ Check if user already exists
+    const existingUser = await User.findOne({ where: { email } });
+    if (existingUser) {
+      authLogger.warn(`User with email ${email} already exists.`);
+      await otpRecord.destroy();
+      return res.status(409).json({ status: "error", message: "User already registered. Please login." });
     }
 
-    authLogger.info(
-      `OTP validated successfully for email: ${email}. Deleting OTP record.`
-    );
-    await OtpTable.destroy({ where: { id: otpRecord.id } });
 
-
-    // Creating new user
-    const newUser = new User({
+    // ✅ Ensure valid user data
+    if (!otpRecord.email || otpRecord.email !== email) {
+      authLogger.error(`Mismatch or missing email in OTP record for ${email}`);
+      return res.status(400).json({ status: "error", message: "Invalid user data. Please try again." });
+    }
+    // ✅ Create new user after OTP verification
+    console.log(otpRecord.username)
+    const newUser = await User.create({
       username: otpRecord.username,
       email: otpRecord.email,
-      role: role,
-    });
+      role: role , // Default role to "user" if not provided
+    }); 
 
-    await newUser.save();
 
-    authLogger.info(
-      `User created successfully: ${newUser.username} with email: ${newUser.email}`
-    );
+    // ✅ Delete OTP record after successful verification
+    await otpRecord.destroy();
 
-    res.status(201).json({
+    authLogger.info(`User created successfully: ${newUser.username} (${newUser.email})`);
+
+    return res.status(201).json({
       status: "success",
-      message: "User created successfully. Please set your password.",
+      message: "User verified and created successfully.",
       user: {
-        id: newUser._id,
+        id: newUser.id,
         username: newUser.username,
         email: newUser.email,
         role: newUser.role,
       },
     });
+
   } catch (error) {
-    authLogger.error(
-      `Error in OTP verification and user creation for email: ${req.body.email}: ${error.message}`
-    );
-    console.error("Error details:", error);
-    res.status(500).json({
-      status: "error",
-      message: "Server error. Please try again later.",
-    });
+    authLogger.error(`Error in OTP verification for ${req.body.email}: ${error.message}`);
+    console.log(error.message);
+
+    // ✅ Handle specific Sequelize validation errors
+    if (error.name === "SequelizeValidationError") {
+      return res.status(400).json({ status: "error", message: "Validation error. Please check input data." });
+    }
+
+    return res.status(500).json({ status: "error", message: "Server error. Try again later." });
   }
 };
 
@@ -333,7 +265,7 @@ exports.login = async (req, res) => {
 
     // Generate JWT access token
     const payload = {
-      id: user._id,
+      id: user.id,
       username: user.username,
       email: user.email,
       role: user.role,
@@ -345,7 +277,7 @@ exports.login = async (req, res) => {
 
     // Generate JWT refresh token
     const refreshToken = jwt.sign(payload, process.env.JWT_SECRET_REFRESH, {
-      expiresIn: "1d",
+      expiresIn: "7d",
     });
 
     // Store the refresh token in the database (if needed)
@@ -357,10 +289,10 @@ exports.login = async (req, res) => {
     res.status(200).json({
       status: "success",
       message: "Login successful.",
-      accessToken,
       refreshToken,
+      accessToken,
       user: {
-        id: user._id,
+        id: user.id,
         username: user.username,
         email: user.email,
         role: user.role,
@@ -382,6 +314,9 @@ exports.refreshToken = async (req, res) => {
   try {
     const { refreshToken } = req.body;
 
+    console.log("1--",refreshToken);
+    
+
     if (!refreshToken) {
       return res.status(400).json({
         status: "error",
@@ -402,7 +337,7 @@ exports.refreshToken = async (req, res) => {
         }
 
         // Find user with the provided refresh token
-        const user = await User.findOne({ _id: decoded.id, refreshToken });
+        const user = await User.findOne({ id: decoded.id, refreshToken });
 
         if (!user) {
           return res.status(404).json({
@@ -414,7 +349,7 @@ exports.refreshToken = async (req, res) => {
         // Generate new access token
         const newAccessToken = jwt.sign(
           {
-            id: user._id,
+            id: user.id,
             username: user.username,
             email: user.email,
             role: user.role,
@@ -426,7 +361,7 @@ exports.refreshToken = async (req, res) => {
         // Generate new refresh token (optional but recommended)
         const newRefreshToken = jwt.sign(
           {
-            id: user._id,
+            id: user.id,
             username: user.username,
             email: user.email,
             role: user.role,
